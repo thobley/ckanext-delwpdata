@@ -1,0 +1,362 @@
+/* background on homepage grey, but other pages white */
+
+
+/*
+ .homepage [role = main]{
+   background: #eeeeee url("../../../base/images/bg.png");
+}*/
+
+@font-face {
+  font-family: VIC;
+  src:  url("../../../base/fonts/vic-regular.woff2") format("woff2"),
+       url("../../../base/fonts/vic-regular.woff") format("woff"),
+      url("../../../base/fonts/vic-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: VIC;
+   src:  url("../../../base/fonts/vic-medium.woff2") format("woff2"),
+       url("../../../base/fonts/vic-medium.woff") format("woff"),
+      url("../../../base/fonts/vic-medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: VIC;
+  src:  url("../../../base/fonts/vic-semibold.woff2") format("woff2"),
+       url("../../../base/fonts/vic-semibold.woff") format("woff"),
+      url("../../../base/fonts/vic-semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: VIC;
+  src:  url("../../../base/fonts/vic-bold.woff2") format("woff2"),
+       url("../../../base/fonts/vic-bold.woff") format("woff"),
+      url("../../../base/fonts/vic-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+.masthead {
+    background: rgb(0,179,169) url("../../../base/images/Spatial_web_banner_1920x100.PNG");
+    min-height: 85px;
+    padding-top:10px;
+    padding-bottom: 5px;
+    background-repeat: repeat-x;
+}
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+    background-color: #69638e;
+}
+.masthead .container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.account-masthead {
+    background: #333333 url("../../../base/images/bg.png");
+}
+.masthead .site-search input {
+    width: 200px;
+    padding: 4px 10px;
+    border-radius: 7px;
+    border-color: #fff;
+    height: 30px;
+    margin-top: -5px;
+}
+.search-form .search-input.search-giant input{
+    -webkit-border-radius: 7px;
+     border-radius: 7px;
+}
+.search-form.control-order-by select{
+     -webkit-border-radius: 7px;
+     border-radius: 7px;
+}
+.homepage .module-search .search-giant input {
+    /* border-color: #003f52; */
+   border-radius: 7px;
+   border-color: #fff;
+}
+
+.homepage .module-search .tags {
+    /*background:  rgba(16,2,73,1); */
+   /*  background: rgba(0,0,0,1);*/
+    background: transparent;
+}
+.tag {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #ffffff;
+    background-color: #652767;
+    padding: 1px 10px;
+    border: 0px; 
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px;
+    border-radius: 0px; 
+     -webkit-box-shadow: none; 
+    -moz-box-shadow: inset 0 1px 0 #ffffff;
+    box-shadow: none;
+    font-weight: 700;
+}
+a.tag:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00b5af;
+     border: 0px; 
+     -webkit-box-shadow: none; 
+    -moz-box-shadow:none;
+     box-shadow: none; 
+}
+body {
+  /*background: #006064 url("../../../base/images/bg.png");*/
+   background: #000;
+   font-family: 'VIC',Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+.hero {
+   background-image: url(http://intranet.delwp.vic.gov.au/site-helpers/section-images/banner-emergency.jpg);
+   background-size: cover;
+}
+header.module-heading{
+   background: url("../../../base/images/vmapi_sma.png");
+}
+
+.site-footer {
+    /*background: rgba(0,181,175,1) url("../../../base/images/bg.png");*/
+    background: #000 url("../../../base/images/bg.png");
+    min-height: 70px;
+    padding-left:10px;
+}
+.olControlAttribution {
+   font-family: arial;
+}
+.navbar .nav>li>a {
+    padding: 10px 23px 10px;
+}
+
+.box {
+    background-color: #FFF;
+    border: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px; 
+    border-radius: 0px; 
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none; 
+}
+.homepage .module-search {
+    padding: 0px;
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px; 
+    border-radius: 0px; 
+    margin: 0;
+    color: #ffffff;
+    background: transparent;
+}
+.homepage .module-search .module-content {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0);
+    border-bottom: none;
+    /*background: url("../../../base/images/Spatial_web_banner_1920x100.PNG"); 
+    background-size: cover;*/
+    background; transparent;
+}
+.homepage .module-search .tags {
+    padding: 5px 10px 10px 10px;
+    /* background-color: #003647; */
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px; 
+    border-radius: 0px; 
+}
+.media-item {
+    position: relative;
+    float: left;
+    width: 189px;
+    padding: 15px;
+    margin: 15px 0 0 15px;
+    background-color: white;
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0px;
+    border-radius: 0px; 
+}
+.media-view {
+    border: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: purple;
+}
+.media-view:hover{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+}
+.media-item:hover {
+    z-index: 1;
+    background-color: #18969D;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    
+}
+.media-item {
+    position: relative;
+    float: left;
+    width: 189px;
+    padding: 15px;
+    margin: 15px 0 0 15px;
+    background-color: #652767;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: white;
+}
+.media-heading{
+    word-break: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
+.media-item .media-image {
+    margin-bottom: 5px;
+    max-width: 179px;
+    border-radius: 0;
+    padding: 5px;
+    background-color: white;
+}
+.wrapper {
+    background-color: #FFF;
+    border: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-left: 0;
+    background-image:none;
+}
+.col2 .module-content.box{
+    min-height: 302px;
+}
+.nav-simple>li{
+    border-bottom: none;
+}
+.module-footer{
+    border-top: none;
+}
+    
+.module-heading {
+    background-color: white;
+    border-bottom: #cccccc solid 3px;
+    border-top: none;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-bottom: 3px;
+}
+
+.module .pagination{
+    border-top: none;
+}
+.pagination ul>li>a {
+    border: none;
+}
+.media-grid{
+    border:none;
+    background: none;
+}
+.media-item .media-image{
+   /*  display: none; */
+}
+
+.page-header.module-content{
+    background-color: #fff;
+}
+
+.box.delwpintro {
+   background-color: rgba(105,99,142,1);
+   color: white;
+   margin-bottom: 25px;
+}
+
+.group-list .module-heading h3 a{
+   background-color: #fff;
+}
+
+.delwpstats {
+   text-align: center;
+   color: white;
+   margin-top: 0;
+}
+
+.layout-1 .search-form .heading {
+   text-align: center;
+}
+
+
+.delwpintro p{
+   font-size: 20px;
+}
+
+@media screen and (max-width: 979px) {
+   .col2 .module-content.box {
+        min-height: 327px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .hero {
+      background: none;
+   }
+   .span12.delwpcont{
+      margin-bottom: 30px;
+      background: url("http://clancy.aaa.depi.vic.gov.au:8081/test/Mt_hotham_alpine_range_scenery_320px.jpg");
+     /* background-color: rgba(232,144,114,1);*/
+      background-position: center;
+   }
+  .homepage .module-search .module-content {
+     /* background-color: rgb(31,21,71);*/
+     background: transparent;
+   }
+  .toolbar{
+      background-color: #000;
+  }
+}
+
+.featured {
+   display:none;
+}
+@media (min-width: 768px)
+.wrapper {
+     background-image: none; 
+    /* background-repeat: repeat-y; */
+    /* background-position: -54px 0px; */
+}
+.module-narrow .module-heading, .module-narrow .module-content, .module-narrow .module-footer {
+    background-color: white;
+}
+
+
+/* COMMENT OUT
+ * a.media-image>img {
+ *     display: block;
+ *         -moz-box-sizing: border-box;
+ *             box-sizing: border-box;
+ *                 background: url("../../../base/images/Victoria_State_Gov_DELWP_right_reverse_rgb.PNG") no-repeat;
+ *                     width: 420ppx; /* Width of new image */
+ /*   height: 220px; /* Height of new image */
+ /*   padding-left: 420px; /* Equal to width of new image */
+/*}
+div.module-content header {
+    display:none;
+}
+.media-heading {
+    content: "Check out some Vicmap Datasets";
+}*/
+

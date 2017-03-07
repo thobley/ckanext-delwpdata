@@ -1,0 +1,20 @@
+{% ckan_extends %}
+
+{% block extras %}
+  {% if pkg_dict.anzlic_id %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Anzlic ID") }}</th>
+      <td class="dataset-details"><a href="http://services.land.vic.gov.au/SpatialDatamart/dataSearchViewMetadata.html?anzlicId={{ pkg_dict.anzlic_id}}&extractionProviderId=1" target="_blank">{{ pkg_dict.anzlic_id }}</a></td>
+    </tr>
+  {% endif %}
+  {# {{  super() }}  #}
+  {% for extra in h.sorted_extras(pkg_dict.extras) %}
+  {% set key, value = extra %}
+     {% if (key != "spatial") %}
+          <tr rel="dc:relation" resource="_:extra{{ i }}">
+            <th scope="row" class="dataset-label" property="rdfs:label">{{ _(key) }}</th>
+            <td class="dataset-details" property="rdf:value">{{ value }}</td>
+          </tr>
+     {% endif %}
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% ckan_extends %}
+
+   {% block styles %}
+      {{ super() }}
+
+      {% resource 'delwpdata/delwp.css' %}
+
+      {% resource 'delwpdata/platform_embed.js' %} 
+      {% resource 'delwpdata/platform_social_buttons.js' %}  
+      {% resource 'delwpdata/delwp.js' %}
+
+   {% endblock %}
